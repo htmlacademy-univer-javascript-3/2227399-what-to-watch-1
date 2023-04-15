@@ -23,9 +23,9 @@ function AddReviewForm(): JSX.Element {
     <form action="#" className="add-review__form">
       <div className="rating">
         <div className="rating__stars"
-             onChange={({target}: ChangeEvent<HTMLInputElement>) => {
-               setRatingValue(Number(target.value));
-             }}
+          onChange={({target}: ChangeEvent<HTMLInputElement>) => {
+            setRatingValue(Number(target.value));
+          }}
         >
 
           <RatingElement ratingValue={10}/>
@@ -44,9 +44,9 @@ function AddReviewForm(): JSX.Element {
 
       <div className="add-review__text">
         <textarea className="add-review__textarea" name="review-text" id="review-text" placeholder="Review text"
-                  onChange={({target}: ChangeEvent<HTMLTextAreaElement>) => {
-                    setReviewText(target.value);
-                  }}
+          onChange={({target}: ChangeEvent<HTMLTextAreaElement>) => {
+            setReviewText(target.value);
+          }}
         >
         </textarea>
         <div className="add-review__submit">

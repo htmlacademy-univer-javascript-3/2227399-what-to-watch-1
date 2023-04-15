@@ -3,7 +3,7 @@ import {useNavigate, useParams} from 'react-router';
 import {Link} from 'react-router-dom';
 import {AppRoutes} from '../../components/app/const';
 import AddReviewForm from '../add-review/add-review-form';
-import NotFound from "../not-found/not-found-page";
+import NotFound from '../not-found/not-found-page';
 
 type AddReviewScreenProps = {
   films: Films;
@@ -50,7 +50,7 @@ function AddReviewPage(props: AddReviewScreenProps): JSX.Element {
             <ul className="user-block">
               <li className="user-block__item">
                 <div className="user-block__avatar"
-                     onClick={() => navigate(AppRoutes.MyList)}
+                  onClick={() => navigate(AppRoutes.MyList)}
                 >
                   <img
                     src="img/avatar.jpg"

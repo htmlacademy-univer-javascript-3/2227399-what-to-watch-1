@@ -1,9 +1,9 @@
 import FilmCard from '../../components/film-card/film-card';
-import {Films} from "../../types/film";
-import {useNavigate} from 'react-router'
+import {Films} from '../../types/film';
+import {useNavigate} from 'react-router';
 import {AppRoutes} from '../../components/app/const';
-import {useState, MouseEvent} from "react";
-import {Link} from "react-router-dom";
+import {useState, MouseEvent} from 'react';
+import {Link} from 'react-router-dom';
 
 type MyListScreenProps = {
   films: Films;
@@ -55,13 +55,13 @@ function MyListPage(props: MyListScreenProps): JSX.Element {
 
             return (
               <article key={keyValue} className="small-film-card catalog__films-card"
-                       onMouseEnter={({target}: MouseEvent<HTMLElement>) => {
-                         setActiveCard(film);
-                       }}
-                       onMouseLeave={({target}: MouseEvent<HTMLElement>) => {
-                         setActiveCard([{}]);
-                       }}
-                       onClick={() => navigate(`/films/${film.id}`)}
+                onMouseEnter={({target}: MouseEvent<HTMLElement>) => {
+                  setActiveCard(film);
+                }}
+                onMouseLeave={({target}: MouseEvent<HTMLElement>) => {
+                  setActiveCard([{}]);
+                }}
+                onClick={() => navigate(`/films/${film.id}`)}
               >
                 <FilmCard
                   film={film}
